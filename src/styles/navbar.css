@@ -1,0 +1,21 @@
+.navbar-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 15px;
+    border-bottom: 1px solid black;
+}
+
+.navbar-logo {
+    color: black;
+
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.navbar-inner-right {
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
