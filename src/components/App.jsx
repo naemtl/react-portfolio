@@ -1,6 +1,6 @@
 import React from 'react'
 import Homepage from './Homepage'
-import Navbar from './Navbar'
+import Navbar from './Nav/Navbar'
 import Footer from './Footer'
 import { BrowserRouter, Route } from "react-router-dom";
 
@@ -16,4 +16,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;
