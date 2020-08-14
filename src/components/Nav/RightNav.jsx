@@ -32,8 +32,8 @@ const NavDiv = styled.div`
 const RightNav = () => {
     return (
         <NavDiv>
-            <Link to='/' className="navbar-item">Resume</Link>
-            <Link to='/' className="navbar-item">Portfolio</Link>
+            <Link to='/profile' className="navbar-item">Profile</Link>
+            <Link to='/' className="navbar-item">Projects</Link>
             <Link to='/' className="navbar-item">Contact</Link>
             <Link to='/' className="navbar-item">
                 <FaGithubSquare />

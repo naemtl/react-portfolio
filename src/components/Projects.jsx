@@ -1,9 +1,6 @@
 import React from 'react'
 
-// template_lg8ni0d4
- 
-
-const Contact = () => {
+const Projects = () => {
     return (
         <div>
             
@@ -11,4 +8,4 @@ const Contact = () => {
     )
 }
 
-export default Contact
+export default Projects
