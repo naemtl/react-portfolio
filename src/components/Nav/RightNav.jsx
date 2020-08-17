@@ -34,7 +34,7 @@ const RightNav = () => {
         <NavDiv>
             <Link to='/profile' className="navbar-item">Profile</Link>
             <Link to='/' className="navbar-item">Projects</Link>
-            <Link to='/' className="navbar-item">Contact</Link>
+            <Link to='/contact' className="navbar-item">Contact</Link>
             <Link to='/' className="navbar-item">
                 <FaGithubSquare />
             </Link>
