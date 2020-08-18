@@ -12,7 +12,7 @@ const StyledMenu = styled.nav`
   background: #fff;
   border-left: 1px solid black;
   height: 100vh;
-  text-align: left;
+  text-align: center;
   padding: 2rem;
   position: absolute;
   top: 0;
@@ -25,33 +25,21 @@ const StyledMenu = styled.nav`
     width: 100%;
     border: none
   }
-
-  .navbar-icon-container {
-    display: flex;
-    justify-content: center;
-    width: 100%; 
-  }
-
-  .navbar-icon-container-inner {
-    display: flex;
-    justify-content: space-around;
-    width: inherit;
-
-    @media (max-width: 640px) {
-      width: 40%;
-    }
-  }
-
+  
   .navbar-item {
     font-size: 2rem;
     text-transform: lowercase;
-    padding: 2rem 0;
+    margin: 2rem 0;
     font-weight: bold;
     letter-spacing: 0.5rem;
     /* color: ${({ theme }) => theme.primaryDark}; */
     color: #000;
     text-decoration: none;
     transition: color 0.3s linear;
+
+    .icon {
+      font-size: 3rem;
+    }
     
     @media (max-width: 640px) {
       font-size: 1.5rem;
@@ -71,16 +59,14 @@ const RightNav = ({ open, setOpen }) => {
       <Link onClick={() => setOpen(!open)} to='/profile' className="navbar-item">Profile</Link>
       <Link onClick={() => setOpen(!open)} to='/' className="navbar-item">Projects</Link>
       <Link onClick={() => setOpen(!open)} to='/contact' className="navbar-item">Contact</Link>
-      <div className='navbar-icon-container'>
-        <div className='navbar-icon-container-inner'>
-          <Link onClick={() => setOpen(!open)} to='/' className="navbar-item">
-            <FaGithubSquare />
-          </Link>
-          <Link onClick={() => setOpen(!open)} to='/' className="navbar-item">
-            <FaLinkedin />
-          </Link>
-        </div>
-      </div>
+
+      <Link onClick={() => setOpen(!open)} to='/' className="navbar-item">
+        <FaGithubSquare className="icon" />
+      </Link>
+      <Link onClick={() => setOpen(!open)} to='/' className="navbar-item">
+        <FaLinkedin className="icon" />
+      </Link>
+
     </StyledMenu>
   )
 }
