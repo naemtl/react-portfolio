@@ -19,11 +19,15 @@ const Nav = styled.nav`
     background: #fff;
 
     .navbar-logo {
-        color: black;
+        color: #000000;
         font-weight: 700;
         font-size: 2rem;
         display: flex; 
         align-items: center;
+
+        &:hover {
+            color: #4d4d4d;
+        }
     }
     
     .navbar-inner-left {

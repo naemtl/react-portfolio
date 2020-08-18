@@ -4,43 +4,6 @@ import { bool, func } from 'prop-types';
 
 import styled from "styled-components";
 
-// const StyledBurger = styled.div`
-//     width: 2rem;
-//     height: 2rem;
-//     position: fixed;
-//     top: 32px;
-//     right: 20px;
-//     cursor: pointer;
-//     z-index: 20;
-//     display: none;
-
-//     @media (max-width: 768px) {
-//         display: flex;
-//         justify-content: space-around;
-//         flex-flow: column nowrap;
-//     }
-
-//     div {
-//         width: 2rem;
-//         height: 0.25rem;
-//         background-color: ${({ open }) => open ? '#ccc' : '#333'};
-//         border-radius: 10px;
-//         transform-origin: 1px;
-//         transition: all 0.3s linear;
-
-//         &:nth-child(1) {
-//             transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0deg)'};
-//         }
-//         &:nth-child(2) {
-//             transform: ${({ open }) => open ? 'translateX(100%)' : 'translateX(0)'};
-//             opacity: ${({ open }) => open ? '0' : '1'};
-//         }
-//         &:nth-child(3) {
-//             transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0deg)'};
-//         }
-//     }
-// `;
-
 const StyledBurger = styled.button`
   position: absolute;
   top: 32px;
@@ -63,7 +26,7 @@ const StyledBurger = styled.button`
   div {
     width: 2rem;
     height: 0.25rem;
-    background: ${({ open }) => open ? 'black' : 'black'};
+    background: ${({ open }) => open ? '#4d4d4d' : '#000000'};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
@@ -86,21 +49,21 @@ const StyledBurger = styled.button`
 
 const Burger = ({ open, setOpen }) => {
 
-    return (
-        <>
-            <StyledBurger open={open} onClick={() => setOpen(!open)}>
-                <div />
-                <div />
-                <div />
-            </StyledBurger>
-            <RightNav open={open} setOpen={setOpen} />
-        </>
-    )
+  return (
+    <>
+      <StyledBurger open={open} onClick={() => setOpen(!open)}>
+        <div />
+        <div />
+        <div />
+      </StyledBurger>
+      <RightNav open={open} setOpen={setOpen} />
+    </>
+  )
 }
 
 Burger.propTypes = {
-    open: bool.isRequired,
-    setOpen: func.isRequired,
+  open: bool.isRequired,
+  setOpen: func.isRequired,
 };
 
 export default Burger
