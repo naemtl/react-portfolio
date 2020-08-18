@@ -11,8 +11,8 @@ const Contact = () => {
     const [isLoading, setIsLoading] = useState(false);
 
     const handleSubmit = req => {
-        const template = 'template_lg8ni0d4';
-        const userId = 'user_7s1h2vkUUe0449K5AXuv6';
+        const template = process.env.REACT_APP_EMAILJS_TEMPLATE;
+        const userId = process.env.REACT_APP_EMAILJS_USERID;
         const params = req;
 
         window.emailjs.send('default_service', template, params, userId).then(res => {
