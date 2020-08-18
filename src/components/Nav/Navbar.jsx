@@ -1,7 +1,10 @@
-import React from 'react';
-import RightNav from "./RightNav";
+import React, { useRef, useState } from 'react';
 import { Link } from "react-router-dom";
 
+import { useOnClickOutside } from '../../hooks';
+import Burger from "./Burger";
+
+import { bool, func } from 'prop-types';
 import styled from 'styled-components';
 
 const Nav = styled.nav`
@@ -29,14 +32,24 @@ const Nav = styled.nav`
 `
 
 const Navbar = () => {
+
+    const [open, setOpen] = useState(false);
+    const node = useRef();
+    useOnClickOutside(node, () => setOpen(false));
+
     return (
-        <Nav className="navbar-container">
+        <Nav onClick={() => open ? setOpen(!open) : null} className="navbar-container" ref={node}>
             <div className="navbar-inner-left">
                 <Link to='/' className="navbar-logo">Matthew's Portfolio</Link>
             </div>
-            <RightNav />
+            <Burger open={open} setOpen={setOpen} />
         </Nav>
     )
 }
+
+Burger.propTypes = {
+    open: bool.isRequired,
+    setOpen: func.isRequired,
+};
 
 export default Navbar

@@ -1,12 +1,16 @@
-* {
+*, *::after, *::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+html, body {
   margin: 0;
   padding: 0;
 }
 
-html, body {
+body {
   font-family: monospace;
+  text-rendering: optimizeLegibility;
 }
 
 .homepage-container {
