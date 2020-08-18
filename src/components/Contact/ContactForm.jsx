@@ -24,7 +24,7 @@ const ContactForm = ({ handleCraftReq }) => {
     }
 
     return (
-        <div>
+        <div className='contact-form-container'>
             <form onSubmit={handleSubmit}>
                 <input placeholder="give me name" type="text" name='name' value={name} onChange={handleChange}/>
                 <input placeholder="give me email" type="email" name='email' value={email} onChange={handleChange}/>

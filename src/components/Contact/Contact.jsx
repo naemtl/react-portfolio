@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ContactForm from "./ContactForm";
+import Submitted from "./Submitted";
 
 // 
 // https://medium.com/@belktaylor12/creating-a-contact-form-for-your-react-portfolio-without-a-backend-dc1abaca820f 
@@ -30,8 +31,8 @@ const Contact = () => {
     }
 
     return (
-        <div>
-            {isLoading ? 'Loading...' : formSubmitted ? 'Submitted!' : <ContactForm handleCraftReq={handleCraftReq} />}
+        <div className='contact-container'>
+            {isLoading ? 'Loading...' : formSubmitted ? <Submitted /> : <ContactForm handleCraftReq={handleCraftReq} />}
         </div>
     )
 }

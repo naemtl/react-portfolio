@@ -1,0 +1,117 @@
+// Global
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: monospace;
+}
+
+// Homepage
+
+.homepage-container {
+    background: url(../images/silo5.jpg) no-repeat;
+    width: 100vw;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+    .homepage-content {
+        margin: 30vh 3vh;
+        font-size: 20px;
+    }
+}
+
+
+
+.homepage-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .7;
+    position: absolute;
+}
+
+.homepage-bio {
+    color: white;
+    margin-top: 30px;
+}
+
+// Navbar
+
+.navbar-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 15px;
+    border-bottom: 1px solid black;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background: #fff;
+    
+    .navbar-logo {
+        color: black;
+        font-weight: 700;
+        font-size: 2rem;
+    }
+    // .navbar-inner-right {
+    //     width: 30vw;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: space-evenly;
+    // }
+}
+
+
+// Projects
+
+// Profile
+
+// Contact
+
+.contact-container {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+    .contact-form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            input {
+                display: flex;
+                width: 100%;
+            }
+        }
+    }
+    .submitted-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+// Footer
+
+.footer-container {
+    position: fixed;
+    bottom: 0;
+    background: white;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid black;
+}

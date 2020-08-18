@@ -1,7 +1,5 @@
 import React from 'react';
 
-import '../styles/homepage.css'
-
 const Homepage = () => {
   return (
     <div className="homepage-container">
