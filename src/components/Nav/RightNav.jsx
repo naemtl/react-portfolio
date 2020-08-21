@@ -59,14 +59,12 @@ const RightNav = ({ open, setOpen }) => {
       <Link onClick={() => setOpen(!open)} to='/profile' className="navbar-item">Profile</Link>
       <Link onClick={() => setOpen(!open)} to='/' className="navbar-item">Projects</Link>
       <Link onClick={() => setOpen(!open)} to='/contact' className="navbar-item">Contact</Link>
-
-      <Link onClick={() => setOpen(!open)} to='/' className="navbar-item">
+      <a href='https://github.com/naemtl/' onClick={() => setOpen(!open)} className="navbar-item">
         <FaGithubSquare className="icon" />
-      </Link>
-      <Link onClick={() => setOpen(!open)} to='/' className="navbar-item">
+      </a>
+      <a href='https://www.linkedin.com/in/matthewstinis/' onClick={() => setOpen(!open)} className="navbar-item">
         <FaLinkedin className="icon" />
-      </Link>
-
+      </a>
     </StyledMenu>
   )
 }

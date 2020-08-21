@@ -36,13 +36,13 @@ body {
 .homepage-overlay {
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: #000;
     opacity: .7;
     position: absolute;
 }
 
 .homepage-bio {
-    color: white;
+    color: #fff;
     margin-top: 30px;
 }
 
@@ -53,14 +53,14 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 30px 15px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #000;
     position: fixed;
     top: 0;
     z-index: 999;
     background: #fff;
     
     .navbar-logo {
-        color: black;
+        color: #000;
         font-weight: 700;
         font-size: 2rem;
     }
@@ -80,7 +80,7 @@ body {
 // Contact
 
 .contact-container {
-    height: 50vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-self: center;
@@ -89,12 +89,34 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
+        margin: 0 10px;
         form {
             display: flex;
             flex-wrap: wrap;
-            input {
+            input, textarea {
                 display: flex;
                 width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid;            
+            }
+            .contact-form-button-container {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                button {
+                    background-color:  #4d4d4d;
+                    border: 1px solid #000;
+                    padding: 10px;
+                    color: #fff;
+                    font-family: monospace;
+                    width: 100px;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: grey;
+                    }   
+                }
             }
         }
     }
@@ -102,7 +124,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 }
 
@@ -111,11 +133,11 @@ body {
 .footer-container {
     position: fixed;
     bottom: 0;
-    background: white;
+    background: #fff;
     width: 100%;
     height: 8vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid black;
+    border-top: 1px solid #000;
 }
