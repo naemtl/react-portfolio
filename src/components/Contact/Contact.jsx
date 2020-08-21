@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
+import LoadingWheel from "./LoadingWheel";
 import ContactForm from "./ContactForm";
 import Submitted from "./Submitted";
-
-// 
-// https://medium.com/@belktaylor12/creating-a-contact-form-for-your-react-portfolio-without-a-backend-dc1abaca820f 
 
 const Contact = () => {
 
@@ -32,9 +30,12 @@ const Contact = () => {
 
     return (
         <div className='contact-container'>
-            {isLoading ? 'Loading...' : formSubmitted ? <Submitted /> : <ContactForm handleCraftReq={handleCraftReq} />}
+            {
+                isLoading ?
+                    <LoadingWheel isLoading={isLoading} /> : formSubmitted ? <Submitted /> : <ContactForm handleCraftReq={handleCraftReq} />
+            }
         </div>
     )
 }
 
-export default Contact
+export default Contact;

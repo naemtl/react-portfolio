@@ -77,13 +77,33 @@ body {
 
 // Profile
 
+.profile-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    
+    .profile-container-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 10px;
+        width: 100%;
+        .profile-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+        }
+    }
+}
+
 // Contact
 
 .contact-container {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-self: center;
 
     .contact-form-container {
         display: flex;
@@ -125,6 +145,11 @@ body {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+    .loading-wheel-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
