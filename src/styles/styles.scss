@@ -88,12 +88,32 @@ body {
         align-items: center;
         flex-direction: column;
         margin: 0 10px;
+        max-width: 500px;
         width: 100%;
         .profile-header {
             display: flex;
             align-items: center;
-            justify-content: space-around;
+            justify-content: space-between;
             width: 100%;
+        }
+        .profile-resume-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .profile-skills {
+            display: flex;
+            flex-flow: column;
+            width: 100%;
+            
+            h4 {
+                margin-bottom: 0;
+            }
+            
+            .profile-skills-list {
+                list-style-type: square;
+            }
         }
     }
 }
