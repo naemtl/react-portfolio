@@ -5,9 +5,10 @@ import { bool, func } from 'prop-types';
 import styled from "styled-components";
 
 const StyledBurger = styled.button`
-  position: absolute;
+  /* position: absolute;
   top: 32px;
-  right: 2rem;
+  right: 2rem; */
+  margin: 0 10px 0 30px; 
   display: flex;
   flex-direction: column;
   justify-content: space-around;
