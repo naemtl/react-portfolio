@@ -24,10 +24,18 @@ body {
     background-position: center;
     background-size: cover;
     height: 100vh;
-
     .homepage-content {
-        margin: 30vh 3vh;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: 20px;
+        .homepage-content-inner {
+            max-width: 600px;
+            width: 100%;
+            margin: 0 10vw;
+            line-height: 1.6em;
+        }
     }
 }
 
