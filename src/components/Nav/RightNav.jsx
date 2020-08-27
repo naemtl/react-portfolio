@@ -21,7 +21,7 @@ const StyledMenu = styled.nav`
   transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
 
   
-  @media (max-width: 640px) {
+  @media (max-width: 740px) {
     width: 100%;
     border: none
   }
@@ -41,7 +41,7 @@ const StyledMenu = styled.nav`
       font-size: 3rem;
     }
     
-    @media (max-width: 640px) {
+    @media (max-width: 740px) {
       font-size: 1.5rem;
       text-align: center;
     }

@@ -22,6 +22,9 @@ const StyledBurger = styled.button`
   &:focus {
     outline: none;
   }
+  @media (min-width: 741px) {
+    display: none;
+  }
 
   div {
     width: 2rem;

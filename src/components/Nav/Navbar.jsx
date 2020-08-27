@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { Link } from "react-router-dom";
+import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 
 import { useOnClickOutside } from '../../hooks';
 import Burger from "./Burger";
@@ -9,6 +10,7 @@ import styled from 'styled-components';
 
 const Nav = styled.nav`
     width: 100%;
+    height: 95px;
     display: flex;
     justify-content: space-between;
     padding: 30px 15px;
@@ -21,7 +23,7 @@ const Nav = styled.nav`
     .navbar-logo {
         color: #000000;
         font-weight: 700;
-        font-size: 2rem;
+        font-size: 1.5rem;
         display: flex; 
         align-items: center;
 
@@ -33,6 +35,32 @@ const Nav = styled.nav`
     .navbar-inner-left {
         display: flex;
     }
+
+    .navbar-inner-right {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 50vw;
+        .navbar-item {
+            display: flex; 
+            align-items: center;
+            font-size: 20px;
+            text-transform: lowercase;
+            font-weight: bold;
+            margin-right: 10px;
+            /* color: ${({ theme }) => theme.primaryDark}; */
+            color: #000;
+            text-decoration: none;
+
+            .icon {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 740px) {
+            display: none;
+        }
+    }
 `
 
 const Navbar = () => {
@@ -42,11 +70,22 @@ const Navbar = () => {
     useOnClickOutside(node, () => setOpen(false));
 
     return (
-        <Nav onClick={() => open ? setOpen(!open) : null} className="navbar-container" ref={node}>
+        <Nav className="navbar-container" ref={node}>
             <div className="navbar-inner-left">
                 <Link to='/' className="navbar-logo">Matthew's Portfolio</Link>
             </div>
             <Burger open={open} setOpen={setOpen} />
+            <div className="navbar-inner-right">
+                <Link to='/profile' className="navbar-item">Profile</Link>
+                <Link to='/' className="navbar-item">Projects</Link>
+                <Link to='/contact' className="navbar-item">Contact</Link>
+                <a href='https://github.com/naemtl/' className="navbar-item">
+                    <FaGithubSquare className="icon" />
+                </a>
+                <a href='https://www.linkedin.com/in/matthewstinis/' className="navbar-item">
+                    <FaLinkedin className="icon" />
+                </a>
+            </div>
         </Nav>
     )
 }
