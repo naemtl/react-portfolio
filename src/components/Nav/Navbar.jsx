@@ -40,14 +40,13 @@ const Nav = styled.nav`
         display: flex;
         align-items: center;
         justify-content: space-around;
-        width: 50vw;
+        width: 420px;
         .navbar-item {
             display: flex; 
             align-items: center;
             font-size: 20px;
             text-transform: lowercase;
             font-weight: bold;
-            margin-right: 10px;
             /* color: ${({ theme }) => theme.primaryDark}; */
             color: #000;
             text-decoration: none;
