@@ -39,7 +39,7 @@ body {
 
 @media screen and (min-width: 320px) {
   .homepage-container .homepage-content {
-    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    font-size: calc(15px + 6 * ((100vw - 320px) / 680));
   }
 }
 
@@ -48,6 +48,42 @@ body {
   width: 100%;
   margin: 0 10vw;
   line-height: 1.6em;
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  padding: 0 10px;
+}
+
+@media screen and (min-width: 480px) {
+  .homepage-container .homepage-content .homepage-content-inner {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .homepage-container .homepage-content .homepage-content-inner {
+    -webkit-box-shadow: 9px 13px 200px 0px #fafafa;
+            box-shadow: 9px 13px 200px 0px #fafafa;
+  }
+}
+
+.homepage-container .homepage-content .homepage-content-inner .homepage-bio-icons {
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #fff;
+  font-size: 1.4em;
+}
+
+@media screen and (min-width: 768px) {
+  .homepage-container .homepage-content .homepage-content-inner .homepage-bio-icons {
+    font-size: 2em;
+    margin-top: 30px;
+  }
 }
 
 .homepage-overlay {
