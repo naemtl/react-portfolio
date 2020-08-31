@@ -51,11 +51,7 @@ body {
                 display: flex;
                 justify-content: space-around;
                 color: #fff;
-                font-size: 1.4em;
-                @media screen and (min-width: 768px) {
-                    font-size: 2em;
-                    margin-top: 30px;
-                }
+                font-size: 1.5em;
             }
         }
     }
@@ -78,29 +74,7 @@ body {
 
 // Navbar
 
-.navbar-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 15px;
-    border-bottom: 1px solid #000;
-    position: fixed;
-    top: 0;
-    z-index: 999;
-    background: #fff;
-    
-    .navbar-logo {
-        color: #000;
-        font-weight: 700;
-        font-size: 2rem;
-    }
-    // .navbar-inner-right {
-    //     width: 30vw;
-    //     display: flex;
-    //     align-items: center;
-    //     justify-content: space-evenly;
-    // }
-}
+// see styling in component pages (react styled components)
 
 
 // Projects
@@ -117,14 +91,22 @@ body {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin: 0 10px;
-        max-width: 500px;
+        margin: 0 30px;
+        max-width: 600px;
         width: 100%;
+        @media screen and (min-width: 320px) {
+            font-size: calc(12px + 4 * ((100vw - 320px) / 680));
+        }
         .profile-header {
             display: flex;
             align-items: center;
             justify-content: space-between;
             width: 100%;
+        }
+        .profile-bio {
+            p {
+                line-height: 1.7em;
+            }
         }
         .profile-resume-container {
             display: flex;
@@ -139,11 +121,29 @@ body {
             
             h4 {
                 margin-bottom: 0;
+                border-bottom: 1px solid black;
             }
             
             .profile-skills-list {
                 list-style-type: square;
+                .profile-skills-list-item {
+                    margin-bottom: 10px;
+                    .profile-skills-item-title {
+                        font-weight: 700;
+                    }
+                    .profile-skills-item-content {
+
+                    }
+                }
             }
+        }
+    }
+    .profile-link {
+        font-weight: 700;
+        text-decoration: underline;
+        color: #000;
+        &:hover {
+            cursor: pointer;
         }
     }
 }

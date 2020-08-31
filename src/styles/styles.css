@@ -76,14 +76,7 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   color: #fff;
-  font-size: 1.4em;
-}
-
-@media screen and (min-width: 768px) {
-  .homepage-container .homepage-content .homepage-content-inner .homepage-bio-icons {
-    font-size: 2em;
-    margin-top: 30px;
-  }
+  font-size: 1.5em;
 }
 
 .homepage-overlay {
@@ -97,28 +90,6 @@ body {
 .homepage-bio {
   color: #fff;
   margin-top: 30px;
-}
-
-.navbar-container {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 30px 15px;
-  border-bottom: 1px solid #000;
-  position: fixed;
-  top: 0;
-  z-index: 999;
-  background: #fff;
-}
-
-.navbar-container .navbar-logo {
-  color: #000;
-  font-weight: 700;
-  font-size: 2rem;
 }
 
 .profile-container {
@@ -145,9 +116,15 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 10px;
-  max-width: 500px;
+  margin: 0 30px;
+  max-width: 600px;
   width: 100%;
+}
+
+@media screen and (min-width: 320px) {
+  .profile-container .profile-container-inner {
+    font-size: calc(12px + 4 * ((100vw - 320px) / 680));
+  }
 }
 
 .profile-container .profile-container-inner .profile-header {
@@ -161,6 +138,10 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+}
+
+.profile-container .profile-container-inner .profile-bio p {
+  line-height: 1.7em;
 }
 
 .profile-container .profile-container-inner .profile-resume-container {
@@ -189,10 +170,29 @@ body {
 
 .profile-container .profile-container-inner .profile-skills h4 {
   margin-bottom: 0;
+  border-bottom: 1px solid black;
 }
 
 .profile-container .profile-container-inner .profile-skills .profile-skills-list {
   list-style-type: square;
+}
+
+.profile-container .profile-container-inner .profile-skills .profile-skills-list .profile-skills-list-item {
+  margin-bottom: 10px;
+}
+
+.profile-container .profile-container-inner .profile-skills .profile-skills-list .profile-skills-list-item .profile-skills-item-title {
+  font-weight: 700;
+}
+
+.profile-container .profile-link {
+  font-weight: 700;
+  text-decoration: underline;
+  color: #000;
+}
+
+.profile-container .profile-link:hover {
+  cursor: pointer;
 }
 
 .contact-container {
