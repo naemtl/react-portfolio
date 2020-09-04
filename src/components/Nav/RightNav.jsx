@@ -25,6 +25,10 @@ const StyledMenu = styled.nav`
     width: 100%;
     border: none
   }
+
+  @media (min-width: 740px) {
+    display: none;
+  }
   
   .navbar-item {
     font-size: 2rem;
@@ -34,11 +38,13 @@ const StyledMenu = styled.nav`
     letter-spacing: 0.5rem;
     /* color: ${({ theme }) => theme.primaryDark}; */
     color: #000;
-    text-decoration: none;
-    transition: color 0.3s linear;
-
+    text-decoration: underline;
     .icon {
       font-size: 3rem;
+      text-decoration: none;
+      &:hover {
+        color: #707070;
+      }
     }
     
     @media (max-width: 740px) {
@@ -48,7 +54,7 @@ const StyledMenu = styled.nav`
 
     &:hover {
       /* color: ${({ theme }) => theme.primaryHover}; */
-      color: #4d4d4d;
+      color: #707070;
     }
   }
 `;

@@ -15,16 +15,34 @@ body {
 
 .homepage-container {
   background: url(../images/silo5.jpg) no-repeat;
-  width: 100vw;
+  width: 100%;
   position: relative;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 90vh;
 }
 
-.homepage-container .homepage-content {
-  height: 100vh;
+.homepage-container .homepage-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .7;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.homepage-container .homepage-overlay .homepage-content {
+  margin-top: 150px;
+  margin-bottom: 13vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,12 +56,12 @@ body {
 }
 
 @media screen and (min-width: 320px) {
-  .homepage-container .homepage-content {
+  .homepage-container .homepage-overlay .homepage-content {
     font-size: calc(15px + 6 * ((100vw - 320px) / 680));
   }
 }
 
-.homepage-container .homepage-content .homepage-content-inner {
+.homepage-container .homepage-overlay .homepage-content .homepage-content-inner {
   max-width: 600px;
   width: 100%;
   margin: 0 10vw;
@@ -56,19 +74,24 @@ body {
 }
 
 @media screen and (min-width: 480px) {
-  .homepage-container .homepage-content .homepage-content-inner {
+  .homepage-container .homepage-overlay .homepage-content .homepage-content-inner {
     padding: 0 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .homepage-container .homepage-content .homepage-content-inner {
+  .homepage-container .homepage-overlay .homepage-content .homepage-content-inner {
     -webkit-box-shadow: 9px 13px 200px 0px #fafafa;
             box-shadow: 9px 13px 200px 0px #fafafa;
   }
 }
 
-.homepage-container .homepage-content .homepage-content-inner .homepage-bio-icons {
+.homepage-container .homepage-overlay .homepage-content .homepage-content-inner .homepage-bio {
+  color: #fff;
+  margin-top: 30px;
+}
+
+.homepage-container .homepage-overlay .homepage-content .homepage-content-inner .homepage-bio-icons {
   width: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -77,19 +100,6 @@ body {
       justify-content: space-around;
   color: #fff;
   font-size: 1.5em;
-}
-
-.homepage-overlay {
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  opacity: .7;
-  position: absolute;
-}
-
-.homepage-bio {
-  color: #fff;
-  margin-top: 30px;
 }
 
 .profile-container {
@@ -191,10 +201,11 @@ body {
 
 .profile-container .profile-link:hover {
   cursor: pointer;
+  color: #707070;
 }
 
 .contact-container {
-  height: 100vh;
+  height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -303,6 +314,5 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-top: 1px solid #000;
 }
 /*# sourceMappingURL=styles.css.map */

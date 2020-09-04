@@ -28,7 +28,7 @@ const Nav = styled.nav`
         align-items: center;
 
         &:hover {
-            color: #4d4d4d;
+            color: #707070;
         }
     }
     
@@ -49,10 +49,15 @@ const Nav = styled.nav`
             font-weight: bold;
             /* color: ${({ theme }) => theme.primaryDark}; */
             color: #000;
-            text-decoration: none;
-
+            text-decoration: underline;
+            &:hover {
+                color: #707070;
+            }
             .icon {
                 font-size: 2rem;
+                &:hover {
+                    color: #707070;
+                }
             }
         }
 
