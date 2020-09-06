@@ -90,7 +90,12 @@ body {
 // see styling in component pages (react styled components)
 
 // Projects
-
+.projects-container {
+  margin-top: 130px;
+  margin-bottom: 10vh;
+  display: flex;
+  justify-content: space-around;
+}
 // Profile
 
 .profile-container {

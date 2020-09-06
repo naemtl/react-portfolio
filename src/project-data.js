@@ -1,31 +1,35 @@
 const projectData = [
     {
-        title: 'Insert title',
-        desc: 'Stuff',
+        title: 'Event Horizon',
+        desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore rerum possimus veritatis, molestiae deserunt voluptas tempore eum perspiciatis. Amet consequatur corrupti illo consequuntur veniam dolore ipsa ab veritatis voluptatem assumenda!',
         img: 'a nice lil image',
         url: '',
-        timeline: ''
+        timeline: '',
+        tag: 'eventhorizon'
     },
     {
-        title: 'Insert title',
-        desc: 'Stuff',
+        title: 'The Marquis',
+        desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore rerum possimus veritatis, molestiae deserunt voluptas tempore eum perspiciatis. Amet consequatur corrupti illo consequuntur veniam dolore ipsa ab veritatis voluptatem assumenda!',
         img: 'a nice lil image',
         url: '',
-        timeline: ''
+        timeline: '',
+        tag: 'themarquis'
     },
     {
-        title: 'Insert title',
-        desc: 'Stuff',
+        title: 'Claudia Burneo',
+        desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore rerum possimus veritatis, molestiae deserunt voluptas tempore eum perspiciatis. Amet consequatur corrupti illo consequuntur veniam dolore ipsa ab veritatis voluptatem assumenda!',
         img: 'a nice lil image',
         url: '',
-        timeline: ''
+        timeline: '',
+        tag: 'claudiaburneo'
     },
     {
-        title: 'Insert title',
-        desc: 'Stuff',
+        title: 'À Volontée',
+        desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore rerum possimus veritatis, molestiae deserunt voluptas tempore eum perspiciatis. Amet consequatur corrupti illo consequuntur veniam dolore ipsa ab veritatis voluptatem assumenda!',
         img: 'a nice lil image',
         url: '',
-        timeline: ''
+        timeline: '',
+        tag: 'àvolontée'
     }
 ]
 

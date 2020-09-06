@@ -117,6 +117,16 @@ body {
   }
 }
 
+.projects-container {
+  margin-top: 130px;
+  margin-bottom: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .profile-container {
   margin-top: 130px;
   margin-bottom: 10vh;
