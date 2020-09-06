@@ -9,7 +9,13 @@ const Projects = () => {
         setData(projectData);
     }, [])
 
-    console.log(data);
+    const projectList = projects => {
+        return projects.map(project => {
+            return (
+                <div>{project}</div>
+            )
+        });
+    }
 
     return (
         <div>
