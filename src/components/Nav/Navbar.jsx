@@ -81,7 +81,7 @@ const Navbar = () => {
             <Burger open={open} setOpen={setOpen} />
             <div className="navbar-inner-right">
                 <Link to='/profile' className="navbar-item">Profile</Link>
-                <Link to='/' className="navbar-item">Projects</Link>
+                <Link to='/projects' className="navbar-item">Projects</Link>
                 <Link to='/contact' className="navbar-item">Contact</Link>
                 <a href='https://github.com/naemtl/' className="navbar-item">
                     <FaGithubSquare className="icon" />

@@ -63,7 +63,7 @@ const RightNav = ({ open, setOpen }) => {
   return (
     <StyledMenu open={open}>
       <Link onClick={() => setOpen(!open)} to='/profile' className="navbar-item">Profile</Link>
-      <Link onClick={() => setOpen(!open)} to='/' className="navbar-item">Projects</Link>
+      <Link onClick={() => setOpen(!open)} to='/projects' className="navbar-item">Projects</Link>
       <Link onClick={() => setOpen(!open)} to='/contact' className="navbar-item">Contact</Link>
       <a href='https://github.com/naemtl/' onClick={() => setOpen(!open)} className="navbar-item">
         <FaGithubSquare className="icon" />
