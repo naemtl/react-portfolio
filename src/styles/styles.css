@@ -23,7 +23,7 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  height: 90vh;
+  min-height: calc(100vh - 80px);
 }
 
 .homepage-container .homepage-overlay {
@@ -44,8 +44,7 @@ body {
 }
 
 .homepage-container .homepage-overlay .homepage-content {
-  margin-top: 150px;
-  margin-bottom: 13vh;
+  margin-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,7 +118,7 @@ body {
 
 .projects-container {
   margin-top: 130px;
-  margin-bottom: 10vh;
+  min-height: calc(100vh - 130px - 80px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,7 +128,7 @@ body {
 
 .profile-container {
   margin-top: 130px;
-  margin-bottom: 10vh;
+  min-height: calc(100vh - 130px - 80px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,7 +229,8 @@ body {
 }
 
 .contact-container {
-  height: 90vh;
+  margin-top: 130px;
+  min-height: calc(100vh - 130px - 80px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
