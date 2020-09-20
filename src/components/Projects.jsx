@@ -14,7 +14,7 @@ const Projects = () => {
         return projects.map(project => {
             console.log('in projects component', project);
             return (
-                <div key={project.tag}>
+                <div className="projects-single-listing" key={project.tag}>
                     <Link to={
                         {
                             pathname: `/projects/${project.tag}`,
@@ -24,9 +24,9 @@ const Projects = () => {
 
                         }
                     }>
-                        <div>{project.title}</div>
-                        <div>
-                            <img src={project.img} alt="Project screenshot" />
+                        <h3>{project.title}</h3>
+                        <div className="projects-single-listing-image">
+                            <img src={project.imgUrl} alt="Project screenshot" />
                         </div>
                     </Link>
                 </div>
@@ -36,7 +36,9 @@ const Projects = () => {
 
     return (
         <div className='projects-container'>
-            {projectList(data)}
+            <div className='projects-container-inner'>
+                {projectList(data)}
+            </div>
         </div>
     )
 }

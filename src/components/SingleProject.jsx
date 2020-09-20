@@ -3,9 +3,16 @@ import React from "react";
 const SingleProject = ({ location }) => {
     const { project } = location.state
     return (
-        <div>
-            <div>{project.title}</div>
-            <div>{project.desc}</div>
+        <div className="single-project-container">
+            <div className="single-project-content">
+                <div className="single-project-image">
+                    <img src={project.imgUrl} alt="project screenshot"/>
+                </div>
+                <div className="single-project-info">
+                    <h2>{project.title}</h2>
+                    <div>{project.desc}</div>
+                </div>
+            </div>
         </div>
     )
 }

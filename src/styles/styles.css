@@ -117,13 +117,84 @@ body {
 }
 
 .projects-container {
+  margin: 0 15px;
   margin-top: 130px;
   min-height: calc(100vh - 130px - 80px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects-container .projects-container-inner {
+  max-width: 900px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (min-width: 850px) {
+  .projects-container .projects-container-inner {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.projects-container .projects-container-inner .projects-single-listing {
+  margin: 15px 30px;
+}
+
+.projects-container .projects-container-inner .projects-single-listing .projects-single-listing-image img {
+  height: auto;
+  width: 100%;
+}
+
+.single-project-container {
+  margin-top: 130px;
+  min-height: calc(100vh - 130px - 80px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.single-project-container .single-project-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 30px;
+}
+
+.single-project-container .single-project-content .single-project-image img {
+  height: auto;
+  width: 100%;
+}
+
+.single-project-container .single-project-content .single-project-info {
+  max-width: 350px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .profile-container {
