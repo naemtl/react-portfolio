@@ -1,4 +1,3 @@
-import React from 'react';
 import RightNav from "./RightNav";
 import { bool, func } from 'prop-types';
 

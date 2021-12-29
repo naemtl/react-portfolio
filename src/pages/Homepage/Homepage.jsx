@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaJs, FaNodeJs, FaReact, FaSass, FaGit } from "react-icons/fa";
 
 const Homepage = () => {

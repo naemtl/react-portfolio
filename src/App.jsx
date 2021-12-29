@@ -1,14 +1,13 @@
-import React from 'react'
-import Homepage from './Homepage'
-import Profile from './Profile'
-import Projects from './Projects'
-import SingleProject from './SingleProject'
-import Navbar from './Nav/Navbar'
-import Footer from './Footer'
-import Contact from './Contact/Contact'
+import Homepage from './pages/Homepage/Homepage'
+import Profile from './pages/Profile/Profile'
+import Projects from './pages/Projects/Projects'
+import SingleProject from './pages/Projects/SingleProject/SingleProject'
+import Navbar from './components/Nav/Navbar'
+import Footer from './components/Footer/Footer'
+import Contact from './components/Contact/Contact'
 import { BrowserRouter, Route } from "react-router-dom";
 
-import '../styles/styles.css'
+import './assets/styles/styles.css'
 
 const App = () => {
   return (

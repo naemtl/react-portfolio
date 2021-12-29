@@ -1,8 +1,8 @@
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { Link } from "react-router-dom";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 
-import { useOnClickOutside } from '../../hooks';
+import { useOnClickOutside } from '../../utils/hooks';
 import Burger from "./Burger";
 
 import { bool, func } from 'prop-types';

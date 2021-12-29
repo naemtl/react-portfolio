@@ -1,5 +1,3 @@
-import React from "react";
-
 const SingleProject = ({ location }) => {
     const { project } = location.state
     return (

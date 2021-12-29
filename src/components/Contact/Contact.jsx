@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import LoadingWheel from "./LoadingWheel";
 import ContactForm from "./ContactForm";
 import Submitted from "./Submitted";
