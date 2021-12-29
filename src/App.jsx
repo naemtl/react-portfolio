@@ -7,7 +7,7 @@ import Footer from './components/Footer/Footer'
 import Contact from './pages/Contact/Contact'
 import { BrowserRouter, Route } from "react-router-dom";
 
-import './assets/styles/styles.css'
+import './assets/styles/styles.scss'
 
 const App = () => {
   return (
