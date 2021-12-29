@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import LoadingWheel from "./LoadingWheel";
-import ContactForm from "./ContactForm";
-import Submitted from "./Submitted";
+import LoadingWheel from "../../components/LoadingWheel/LoadingWheel";
+import ContactForm from "./ContactForm/ContactForm";
+import Submitted from "./Submitted/Submitted";
 
 const Contact = () => {
 
