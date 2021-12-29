@@ -1,0 +1,41 @@
+.contact-form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 10px;
+    
+    &__button {
+        background-color: #4d4d4d;
+        border: 1px solid #000;
+        color: #fff;
+        cursor: pointer;
+        font-family: monospace;
+        padding: 10px;
+        width: 100px;
+        
+        &:hover {
+            background-color: grey;
+        }
+    }
+
+    &__submit-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    input,
+    textarea {
+        display: flex;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid;
+    }
+}

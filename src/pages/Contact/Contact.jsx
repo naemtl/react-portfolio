@@ -3,6 +3,8 @@ import LoadingWheel from "../../components/LoadingWheel/LoadingWheel";
 import ContactForm from "./ContactForm/ContactForm";
 import Submitted from "./Submitted/Submitted";
 
+import "./Contact.scss";
+
 const Contact = () => {
 
     const [formSubmitted, setFormSubmitted] = useState(false);
@@ -29,7 +31,7 @@ const Contact = () => {
     }
 
     return (
-        <div className='contact-container'>
+        <div className='contact'>
             {
                 isLoading ?
                     <LoadingWheel isLoading={isLoading} /> : formSubmitted ? <Submitted /> : <ContactForm handleCraftReq={handleCraftReq} />

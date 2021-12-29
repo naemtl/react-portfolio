@@ -1,6 +1,8 @@
+import './Submitted.scss'
+
 const Submitted = () => {
     return (
-        <div className='submitted-container'>
+        <div className='submitted'>
             <h2>Success!</h2>
             <h4>Your message has been sent, and I will get back to you ASAP.</h4>
             <h4>Thank you for your interest and have a great day!</h4>

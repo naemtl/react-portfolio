@@ -1,5 +1,7 @@
 import { useState } from 'react'
 
+import './ContactForm.scss'
+
 const ContactForm = ({ handleCraftReq }) => {
 
     const [name, setName] = useState('');
@@ -24,14 +26,14 @@ const ContactForm = ({ handleCraftReq }) => {
     }
 
     return (
-        <div className='contact-form-container'>
+        <div className='contact-form'>
             <h2>Drop me a line</h2>
             <form onSubmit={handleSubmit}>
                 <input placeholder="give me name" type="text" name='name' value={name} onChange={handleChange} />
                 <input placeholder="give me email" type="email" name='email' value={email} onChange={handleChange} />
                 <textarea placeholder="give me message" rows='5' cols='5' name='multiline' value={multiline} onChange={handleChange} />
-                <div className='contact-form-button-container'>
-                    <button>Send</button>
+                <div className='contact-form__submit-container'>
+                    <button className='contact-form__button'>Send</button>
                 </div>
             </form>
         </div>
